@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="view.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact book</h1>
+        </header>
+
+        <div class="dashboard">
+            <div class="contacts-list" id="root">
+                <div class="contact">
+                    <img src="https://th.bing.com/th/id/OIP.IrUBHhdMo6wWLFueKNreRwHaHa?pid=ImgDet&rs=1" alt="">
+                    <div class="contact-details">
+                        <h3>Hello name hi</h3>
+                        <p>CEO of Giggity enterprises pvt ltd</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-entry">
+                <form id="form">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" >
+                        <div id="error"></div>
+                    </div>
+                    <div class="form-field">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" name="description" required>
+                        <div id="error"></div>
+                    </div>
+                    <div class="form-field">
+                        <label for="image">Image</label>
+                        <input type="text" id="image" name="image" required>
+                        <div id="error"></div>
+                    </div>
+                    <div class="button-holder">
+                        <button type="submit">Add contact</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
